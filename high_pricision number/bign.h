@@ -12,6 +12,8 @@ public:
     bign();
     bign(char *c);
     bign(string s);
+    ~bign();
+    int cmp(const bign&a, const bign &b) const;
     bign operator+(const bign& a) const;
     bign operator-(const bign& a) const;
     bign operator*(const bign& a) const;
