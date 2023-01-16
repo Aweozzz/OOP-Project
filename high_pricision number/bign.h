@@ -9,11 +9,13 @@ private:
     int *num;
 
 public:
+    //each big number is assumed >= 0
     bign();
     bign(char *c);
     bign(string s);
     ~bign();
     int cmp(const bign&a, const bign &b) const;
+    void reset_s();
     bign operator+(const bign& a) const;
     bign operator-(const bign& a) const;
     bign operator*(const bign& a) const;
